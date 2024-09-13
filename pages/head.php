@@ -13,6 +13,10 @@
     body {
       margin: 30px;
       text-align: center;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      align-items: center;
     }
     .container {
       margin: 20px;
@@ -36,6 +40,40 @@
       object-fit: cover; /* Đảm bảo ảnh được cắt vừa với kích thước của thẻ chứa mà vẫn giữ tỷ lệ */
       display: block; /* Loại bỏ khoảng cách dưới ảnh (do inline-block) */
     }
+
+
+
+    /* FILE */
+    h2 {
+            text-align: center;
+        }
+
+        .file-input {
+            margin: 10px 0;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 5px;
+            background-color: #ffebf0;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #6c757d;
+        }
   </style>
 </head>
 <body>
@@ -59,8 +97,8 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="" role="button" aria-expanded="false">File</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="?module=users&action=new">Upload file</a></li>
-        <li><a class="dropdown-item" href="#">Show file uploaded</a></li>
+        <li><a class="dropdown-item" href="?module=file&action=upload">Upload file</a></li>
+        <li><a class="dropdown-item" href="?module=file&action=showfile">Show file uploaded</a></li>
       </ul>
     </li>
   </ul>

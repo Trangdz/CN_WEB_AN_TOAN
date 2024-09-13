@@ -91,5 +91,5 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     </form>
 </div>
 <?php
-require_once 'pages/head.php';
+require_once 'pages/footer.php';
 ?>
